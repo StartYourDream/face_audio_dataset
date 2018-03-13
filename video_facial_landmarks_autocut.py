@@ -210,6 +210,7 @@ def write_dataset(videoclip, left_dis, right_dis, check_detect, outfile, normali
 				outseq.append((x, y))
 			else:
 				outseq.append((x-left_avg, y-right_avg))# (作為training data的output)
+			frame_iter = 2450
 
 		# else: # 若此frame無偵測到臉則紀錄聲音 表情設定(0,0)=中性表情
 		# 	inseq.append(frame[0]) #僅取單聲道(作為training data的input)
